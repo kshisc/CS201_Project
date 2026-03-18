@@ -29,7 +29,7 @@ const GameRoomSelectionPage: React.FC = () => {
       return;
     }
 
-	const username = sessionStorage.getItem('username');
+	  const username = sessionStorage.getItem('username');
     sendMessage('join_room', { roomId, username: username });
     navigate(`/game/${roomId}`);
   };

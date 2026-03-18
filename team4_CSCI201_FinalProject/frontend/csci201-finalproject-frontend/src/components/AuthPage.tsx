@@ -17,7 +17,7 @@ const AuthPage: React.FC = () => {
   const handleLogin = async () => {
     try {
       const response = await axios.post('./auth/login', { username, password });
-      console.log('HELP ME');
+      console.log('Login successful');
 
       // Extract user ID from the response
       const userId = response.data.userId;

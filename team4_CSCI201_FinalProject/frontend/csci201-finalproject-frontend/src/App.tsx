@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import AuthPage from './components/AuthPage';
 import SignUpPage from './components/SignUpPage';
 import GameRoomSelectionPage from './components/GameRoomSelectionPage';
-import GameRoom from './components/GameRoom';  // Change this line
+import GamePage from './components/GameRoom'; // Import GamePage component
 //import DrawingBoard from './DrawingBoard'; // Import DrawingBoard
 
 const App: React.FC = () => {
@@ -16,7 +16,7 @@ const App: React.FC = () => {
           <Route path="/" element={<AuthPage />} />
           <Route path="/signup" element={<SignUpPage />} />
           <Route path="/game-room-selection" element={<GameRoomSelectionPage />} />
-          <Route path="/game/:roomId" element={<GameRoom />} /> {/* GamePage route */}
+          <Route path="/game/:roomId" element={<GamePage />} /> {/* GamePage route */}
         </Routes>
       </Router>
     </WebSocketProvider>
