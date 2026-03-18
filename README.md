@@ -1,4 +1,4 @@
-# Sketch Arena
+# Sketch Arena Game
 
 Our project is a web application for a drawing and guessing game, named Sketch Arena, with multiple players in multiple game rooms. Players take turns drawing on a drawing board while everyone else attempts to guess the drawing through typing in the chat in real-time. We implemented user login functionality, a chatroom using websockets, and multithreading to allow simultaneous game rooms.
 
